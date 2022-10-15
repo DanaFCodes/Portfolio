@@ -1,0 +1,68 @@
+@use 'variables' as *;
+
+@media (max-width: 900px) {
+    .logo {
+        width: 100%;
+
+        img {
+            max-width: 20%;
+            margin-top: 5%;
+            opacity: 0.8;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .toggleButton {
+        display: flex;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navLinks ul {
+        flex-direction: column;
+        width: 100%;
+        background-color: #497349;
+    }
+
+    .navLinks li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .navLinks.active {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media (max-width: 590px) {
+    .toggleButton {
+            position: absolute;
+            top: 14%;
+            right: 13%;
+        }
+}
+
+@media (max-width: 550px) {
+    .toggleButton {
+        position: absolute;
+        top: 13%;
+        right: 13%;
+    }
+}
+
+@media (max-width: 500px) {
+    .toggleButton {
+        position: absolute;
+        top: 10%;
+        right: 13%;
+    }
+}

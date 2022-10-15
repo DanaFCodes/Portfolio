@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+body {
+    background-color: $backgroundColor;
+}
+
+h1 {
+    font-family: $quicksand;
+}
+
+h2 {
+    font-family: $doris;
+}
+

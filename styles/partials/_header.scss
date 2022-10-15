@@ -1,0 +1,71 @@
+@use 'variables' as *;
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navLinks li {
+    list-style-type: none;
+    color: black;
+    margin-top: 1%;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+    font-size: 1.3rem;
+}
+
+.navLinks li a:hover {
+    color: white;
+}
+
+.logo {
+    width: 100%;
+    img {
+        max-width: 30%;
+        margin: 2%;
+        opacity: 0.8;
+    }
+}
+
+.toggleButton {
+    position: absolute;
+    top: 15%;
+    right: 13%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 26px;
+}
+
+.toggleButton .bar1, .bar2, .bar3 {
+    height: 3px;
+    margin: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.toggleButton.active .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggleButton.active .bar2 {
+    opacity: 0;
+}
+
+.toggleButton.active .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
