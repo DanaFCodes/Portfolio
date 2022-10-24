@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,47 +9,152 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;800&family=Quicksand:wght@300;500;600;700&display=swap"
+        href="http://fonts.googleapis.com/css2?family=Dosis:wght@200;400;800&family=Quicksand:wght@300;500;600;700&display=swap"
         rel="stylesheet">
-
-    <title>Dana Filatov-Web Developer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9ee4750f0.js" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Dana Filatov</title>
 </head>
+
 <body>
     <header>
         <nav class="wrapper navBar">
             <a href="./index.html"><span class="logo">
-                <img src="./assets/logo.png" alt="Dana Filatov's signature">
-            </span></a>
-            
+                    <img src="./assets/logo.png" alt="Dana Filatov's signature">
+                </span></a>
+
             <a href="#" class="toggleButton">
                 <div class="burger">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
             </a>
-            
+
             <div class="navLinks">
-            <ul>
-                <li>
-                    <a href="#">projects</a>
-                </li>
-                <li>
-                    <a href="#">about</a>
-                </li>
-                <li>
-                    <a href="#">contact</a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="#skills">skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">projects</a>
+                    </li>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
+
     <main class="wrapper">
-    <h1>Dana Filatov, Web Developer</h1>
-    <h2>hey hey you you</h2>
-    <h3>i dont like ur gf</h3>
-    
-    <script src="./app.js"></script>
+        <div class="lilMain wrapper">
+        <h1 class="h1">Dana Filatov,</h1>
+        <h2 class="glitch">Web Developer
+            <span id="glitchBtn" class=span1 aria-hidden="true">Web Developer</span>
+            <span id="glitchBtn2" class=span2 aria-hidden="true">Web Developer</span>
+        </h2>
+
+        <button class="btn enoughBtn" id="startStop"><span>that's enough!</span></button>
+
+        <div class="wrapper">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+
+        <section id="skills">
+            <h2 class="titles skills">skills</h2>
+            
+            <div class="skillsIcons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="devicon-firebase-plain"></i>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="projects titles">projects</h2>
+
+            <div class="oneMag" data-aos="fade-right">
+                <div class="coloumn">
+                    <h3>One Magazine</h3>
+                    <p>Using HTML and CSS3, this is a responsive website for One Magazine. My first stab at a functional, accesible website!</p>
+                    <a class="gitLink gitButt"href="https://github.com/DanaFCodes/Assignment-1/blob/main/index.html" target="_blank"><span>GitHub</span></a>
+                    <a class="liveLink liveButt" href="https://onemagazine.netlify.app/" target="_blank"><span>Live</span></a>
+                </div>
+        
+                <img src="./assets/morflax-things-removebg-preview.png" alt="mockup of project1 on a laptop screen">
+            </div>
+
+            <div class="underSea" data-aos="fade-right">
+                <div class="coloumn">
+                    <h3>Under the Sea</h3>
+                    <p>Here I get a lil' fancier, using HTML, CSS3, SASS, and GitHub, to create a responsive site for the new aquarium in town🐠
+                    </p>
+                    <a class="gitLink gitButt" href="https://github.com/DanaFCodes/Project1" target="_blank"><span>GitHub</span></a>
+                    <a class="liveLink liveButt" href="https://dana-feldman-project1.netlify.app/"target="_blank"><span>Live</span></a>
+                </div>
+                
+                    <img src="./assets/morflax-things_1_-removebg-preview.png" alt="mockup of project3 on a laptop screen">
+            </div>
+
+            <div class="makeWok" data-aos="fade-right">
+                <div class="coloumn">
+                <h3>Make it Wok!</h3>
+                    <p>With the Spoonacular REST API, HTML, CSS3, SASS, and GitHub, myself and a partner created this responsive web app for users who want dinner inspiration based on the ingredients in their fridge! 
+                    </p>
+                    <a class="gitLink gitButt" href="https://github.com/DanaFCodes/Project2" target="_blank"><span>GitHub</span></a>
+                    <a class="liveLink liveButt" href="https://makeitwok.netlify.app/" target="_blank"><span>Live</span></a>
+                </div>
+
+                    <img src="./assets/morflax-things_2_-removebg-preview.png" alt="mockup of project2 on a laptop screen">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="about titles">about</h2>
+                <div class="aboutText">
+                    <p>My name is Dana, I'm an artist turned Frontend Web Developer navigating my way from an ocean of paint and clay to a sea of zeros and ones!
+            
+                <div>
+                    <p>Trained in visual communicaton and creative problem-solving, I'm shifting my analogue skills onto the screen! I have a passion for web-accessibility, responsive design, and am eager to develop web pages and apps for all users.</p>
+                </div>
+                <div>
+                    <p>Thanks for stopping by! Wanna talk code, art, plants, or food? Contact me through any of the platforms below🥰</p>
+                </div>
+                </div>
+
+            <div class="socialIcons wrapper">
+                <a href="https://github.com/DanaFCodes"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dana-feldman-605320196/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:danafeldman97@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <footer>
+            <p>created with 💗 by Dana Filatov</p>
+        </footer>
+
+        <script src="./app.js" defer></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                    // offset: 300,
+                    duration: 1200,
+                });
+        </script>
     </main>
 </body>
+
 </html>

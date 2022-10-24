@@ -1,0 +1,111 @@
+@use 'variables' as *;
+
+.h1 {
+    padding-top: 5%;
+}
+
+.glitch {
+    margin-left: 1%;
+}
+
+.h1,
+.glitch {
+    margin-top: 10%;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.fas {
+    transform: scale(1.1);
+    color: $lightGreyFont1;
+    rotate: 280deg;
+    margin: 0 13%;
+}
+
+.label {
+    height: 35px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: $lightGreyFont2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 100%;
+    bottom: 130px;
+    rotate: 90deg;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.ball {
+    background-color: $lightGreyFont1;
+    position: absolute;
+    top: 3.5px;
+    left: 7px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(31px);
+}
+
+h2.titles {
+    margin-top: 10%;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.skills {
+    padding-top: 15%;
+}
+
+.skillsIcons {
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    margin-left: 18%;
+    padding-bottom: 5%;
+    color: $lightGreyFont1;
+    
+    i {
+        margin-right: 15%;
+        transform: scale(4);
+    }
+}
+
+// about section
+.aboutText {
+    text-align: left;
+    padding-top: 6%;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    
+    i {
+    transform: scale(4);
+    margin-left: 15%;
+    margin-right: 25%;
+    color: $lightGreyFont1;  
+    }
+}
+
+.about {
+    padding-top: 10%;
+}
+// footer
+footer {
+    text-align: center;
+    margin-top: 10%;
+
+}

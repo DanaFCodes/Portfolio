@@ -5,20 +5,47 @@
         width: 100%;
 
         img {
-            max-width: 20%;
+            max-width: 30%;
             margin-top: 5%;
-            opacity: 0.8;
         }
+    }
+
+    body p {
+        font-size: .8rem;
+    }
+
+    .h1,
+    .glitch {
+        font-size: 3rem;
+    }
+
+    .skillsIcons i {
+        transform: scale(2);
+    }
+
+    .socialIcons i {
+        transform: scale(2);
+    }
+
+    .label {
+        bottom: 115px;
     }
 }
 
 @media (max-width: 700px) {
-    .toggleButton {
-        display: flex;
+    body {
+        overflow-x: hidden;
     }
 
-    .navLinks {
-        display: none;
+    .h1 {
+        margin-top: 2%;
+    }
+
+    .toggleButton {
+        display: flex;
+        top: 18%;
+        right: 13%;
+        position: absolute;
     }
 
     .navBar {
@@ -26,43 +53,101 @@
         align-items: center;
     }
 
+    .navLinks {
+        transform: translateY(-260%);
+        transition: transform 0.5s ease-in-out;
+    }   
+
     .navLinks ul {
         flex-direction: column;
-        width: 100%;
-        background-color: #497349;
+        width: 100vw;
+        background-color: #49734965;
     }
 
     .navLinks li {
         text-align: center;
         width: 100%;
+        margin: -2%;
     }
 
     .navLinks.active {
         display: flex;
-        width: 100%;
+        width: 100vw;
+        transform: translateY(0%);
+    }
+
+ .oneMag,
+ .underSea,
+ .makeWok {
+    text-align: center;
+        img {
+            display: none;
+        }
+
+        p {
+            padding-bottom: 5%;
+            text-align: center;
+        }
     }
 }
 
+
+
 @media (max-width: 590px) {
     .toggleButton {
-            position: absolute;
-            top: 14%;
-            right: 13%;
-        }
+       top: 15%;
+    }
+
+    .label {
+        bottom: 105px;
+    }
+
+    h2.titles {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .h1,
+    .glitch {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 550px) {
-    .toggleButton {
-        position: absolute;
-        top: 13%;
-        right: 13%;
+    .skillsIcons i {
+        margin-right: 10%;
+    }
+
+    .label {
+        bottom: 100px;
+        left: 85%;
     }
 }
 
 @media (max-width: 500px) {
     .toggleButton {
-        position: absolute;
-        top: 10%;
-        right: 13%;
+            top: 12%;
+    }
+    .label {
+        bottom: 100px;
+        left: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .h1,
+    .glitch {
+        font-size: 1.5rem;
+    }
+    .toggleButton {
+        top: 6%;
+    }
+    .label {
+        transform: scale(.5);
+        bottom: 85px;
+        left: 85%;
     }
 }

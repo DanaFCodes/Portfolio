@@ -14,58 +14,57 @@
 
 .navLinks li {
     list-style-type: none;
-    color: black;
     margin-top: 1%;
+    background-color:transparent;
 }
 
 .navLinks li a {
     text-decoration: none;
-    color: black;
     padding: 1rem;
     display: block;
     font-size: 1.3rem;
-}
-
-.navLinks li a:hover {
-    color: white;
+    font-family: $quicksand;
+    color: $darkGreyFont1;
+    background-color: transparent;
 }
 
 .logo {
-    width: 100%;
+    max-width: 100%;
     img {
         max-width: 30%;
         margin: 2%;
-        opacity: 0.8;
+        opacity: 1;
     }
 }
 
 .toggleButton {
-    position: absolute;
-    top: 15%;
+    top: 10%;
     right: 13%;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 26px;
+    position: absolute;
 }
 
-.toggleButton .bar1, .bar2, .bar3 {
+.burger div {
     height: 3px;
     margin: 5px;
     width: 100%;
-    background-color: black;
+    background-color: $darkGreyFont1;
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
-.toggleButton.active .bar1 {
+.toggle .bar1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.toggleButton.active .bar2 {
+.toggle .bar2 {
     opacity: 0;
 }
 
-.toggleButton.active .bar3 {
+.toggle .bar3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }

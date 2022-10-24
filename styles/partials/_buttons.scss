@@ -1,0 +1,328 @@
+@use 'variables' as *;
+
+// <--------- ENOUGH BUTTON STARTS --------> //
+.btn {
+    width: 150px;
+    height: 40px;
+    color: $darkGreyFont1;
+    border-radius: 2px;
+    font-family: $quicksand;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: 
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    text-transform: uppercase;
+    font-size: .8rem;
+    transform: scale(.8);
+}
+
+.enoughBtn {
+    width: 150px;
+    height: 44px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.enoughBtn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $darkGreyFont1;
+}
+
+// top and right side line:
+.enoughBtn:before,
+.enoughBtn:after {
+    position: absolute;
+    border: none;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(52, 163, 18);
+    transition: all 0.3s ease;
+}
+
+.enoughBtn:before {
+    height: 0%;
+    width: 2px;
+}
+
+.enoughBtn:after {
+    width: 0%;
+    height: 2px;
+}
+
+.enoughBtn:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.enoughBtn:hover:before {
+    height: 100%;
+}
+
+.enoughBtn:hover:after {
+    width: 100%;
+}
+
+// changes font color on hover
+.enoughBtn span:hover {
+    color: rgb(52, 163, 18);
+    border: none;
+}
+
+// bottom and left side line:
+.enoughBtn span:before,
+.enoughBtn span:after {
+    border: none;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(52, 163, 18);
+    transition: all 0.3s ease;
+}
+
+.enoughBtn span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.enoughBtn span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.enoughBtn span:hover:before {
+    height: 100%;
+}
+
+.enoughBtn span:hover:after {
+    width: 100%;
+}
+// <--------- ENOUGH BUTTON ENDS --------> //
+
+
+// <--------- GITHUB LINK(S)START --------> // 
+.gitLink {
+    width: 150px;
+    height: 40px;
+    color: $darkGreyFont1;
+    border-radius: 2px;
+    font-family: $quicksand;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    text-transform: uppercase;
+    font-size: .8rem;
+    transform: scale(.8);
+}
+
+.gitButt {
+    width: 150px;
+    height: 44px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.gitButt span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $darkGreyFont1;
+}
+
+// top and right side line:
+.gitButt:before,
+.gitButt:after {
+    position: absolute;
+    border: none;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(52, 163, 18);
+    transition: all 0.3s ease;
+}
+
+.gitButt:before {
+    height: 0%;
+    width: 2px;
+}
+
+.gitButt:after {
+    width: 0%;
+    height: 2px;
+}
+
+.gitButt:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.gitButt:hover:before {
+    height: 100%;
+}
+
+.gitButt:hover:after {
+    width: 100%;
+}
+
+// changes font color on hover
+.gitButt span:hover {
+    color: rgb(52, 163, 18);
+    border: none;
+}
+
+// bottom and left side line:
+.gitButt span:before,
+.gitButt span:after {
+    border: none;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(52, 163, 18);
+    transition: all 0.3s ease;
+}
+
+.gitButt span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.gitButt span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.gitButt span:hover:before {
+    height: 100%;
+}
+
+.gitButt span:hover:after {
+    width: 100%;
+}
+// <--------- GITHUB LINK(S)END --------> // 
+
+
+// <--------- LIVE LINK(S)START --------> // 
+.liveLink {
+    width: 150px;
+    height: 40px;
+    color: $darkGreyFont1;
+    border-radius: 2px;
+    font-family: $quicksand;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    text-transform: uppercase;
+    font-size: .8rem;
+    transform: scale(.8);
+}
+
+.liveButt {
+    width: 150px;
+    height: 44px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.liveButt span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $darkGreyFont1;
+}
+
+// top and right side line:
+.liveButt:before,
+.liveButt:after {
+    position: absolute;
+    border: none;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(52, 163, 18);
+    transition: all 0.3s ease;
+}
+
+.liveButt:before {
+    height: 0%;
+    width: 2px;
+}
+
+.liveButt:after {
+    width: 0%;
+    height: 2px;
+}
+
+.liveButt:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.liveButt:hover:before {
+    height: 100%;
+}
+
+.liveButt:hover:after {
+    width: 100%;
+}
+
+// changes font color on hover
+.liveButt span:hover {
+    color: rgb(52, 163, 18);
+    border: none;
+}
+
+// bottom and left side line:
+.liveButt span:before,
+.liveButt span:after {
+    border: none;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(52, 163, 18);
+    transition: all 0.3s ease;
+}
+
+.liveButt span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.liveButt span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.liveButt span:hover:before {
+    height: 100%;
+}
+
+.liveButt span:hover:after {
+    width: 100%;
+}
+
+// <--------- LIVE LINK(S)END --------> // 

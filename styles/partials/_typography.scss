@@ -1,14 +1,100 @@
 @use 'variables' as *;
 
 body {
+    overflow-x: hidden;
     background-color: $backgroundColor;
+    transition: background 1s ease;
+    color: $darkGreyFont1;
+    .navLinks li a:hover {
+            color: $lightGreyFont1;
+        }
+    
+    h1 {
+        font-family: $quicksand;
+    }
+
+    h2,
+    h3,
+    p {
+        font-family: $doris;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+    
 }
 
-h1 {
-    font-family: $quicksand;
-}
+body.light {
+    background-color: $lightBackground;
+    transition: background 1s ease;
+    color: $lightGreyFont2;
 
-h2 {
-    font-family: $doris;
-}
+    .logo {
+            img {
+                opacity: .7;
+            }
+        }
 
+    h3 {
+        color: $darkGreyFont2;
+    }
+
+    .navLinks li a {
+        color: $lightGreyFont2;
+    }
+
+    .navLinks li a:hover {
+        color: $darkGreyFont2;
+    }
+
+    .burger div {
+        background-color: $lightGreyFont2;
+    }
+
+    .btn, 
+    .gitLink,
+    .liveLink {
+        color: $darkGreyFont2;
+    }
+
+    .ball {
+        color: $lightGreyFont1;
+    }
+
+    .enoughBtn:before,
+    .enoughBtn:after,
+    .gitButt:before,
+    .gitButt:after,
+    .liveButt:before,
+    .liveButt:after {
+        border: none;
+        background: rgb(34, 105, 12);
+    }
+
+    .enoughBtn span:hover,
+    .gitButt span:hover,
+    .liveButt span:hover {
+        color: rgb(34, 105, 12);
+        border: none;
+    }
+
+    .enoughBtn span:before,
+    .enoughBtn span:after,
+    .gitButt span:before,
+    .liveButt span:before,
+    .gitButt span:after,
+    .liveButt span:after {
+        border: none;
+        background: rgb(34, 105, 12);
+    }
+
+    .glitch {
+        color: $darkGreyFont1;
+    }
+
+    .skillsIcons,
+    .socialIcons i {
+        color: $darkGreyFont2;
+    }
+}

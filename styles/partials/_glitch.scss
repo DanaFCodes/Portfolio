@@ -1,0 +1,100 @@
+@use 'variables' as *;
+
+.glitch {
+    position: relative;
+    color: rgb(160, 160, 160);
+    text-transform: uppercase;
+    margin-top: -5%;
+    text-shadow:
+        .05em 0 0 rgba(138, 1, 1, 0.75),
+        -.025em -.05em 0 rgba(0, 255, 0, .75),
+        .025em 0 .05em rgba(251, 168, 24, 0.75);
+    margin-bottom: 2%;
+}
+
+.glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.glitch .span1 {
+    // this is the animation we want to turn off
+    animation: glitch 500ms infinite; 
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-.05em, -0.025em);
+    opacity: .5;
+}
+
+.glitch .span2 {
+    animation: glitch 300ms infinite;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    transform: translate(.05em, -0.025em);
+    opacity: .5;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow:
+            .05em 0 0 rgba(138, 1, 1, 0.75),
+            -.025em -.05em 0 rgba(0, 255, 0, .75),
+            .025em 0 .05em rgba(251, 168, 24, 0.75);
+    }
+
+    14% {
+        text-shadow:
+            .05em 0 0 rgba(138, 1, 1, 0.75),
+            -.025em -.05em 0 rgba(0, 255, 0, .75),
+            .025em 0 .05em rgba(251, 168, 24, 0.75);
+    }
+
+    15% {
+        text-shadow:
+            .05em 0 0 rgba(138, 1, 1, 0.75),
+            -.025em -.05em 0 rgba(0, 255, 0, .75),
+            .025em 0 .05em rgba(251, 168, 24, 0.75);
+    }
+
+    49% {
+        text-shadow:
+            .05em 0 0 rgba(138, 1, 1, 0.75),
+            -.025em -.05em 0 rgba(0, 255, 0, .75),
+            .025em 0 .05em rgba(251, 168, 24, 0.75);
+    }
+
+    50% {
+        text-shadow:
+            .05em 0 0 rgba(138, 1, 1, 0.75),
+            -.025em -.05em 0 rgba(0, 255, 0, .75),
+            .025em 0 .05em rgba(251, 168, 24, 0.75);
+    }
+
+    99% {
+        text-shadow:
+            .025em .05em 0 rgba(138, 1, 1, 0.75),
+            .05em 0 0 rgba(0, 255, 0, .75),
+            0 -.05em 0 rgba(251, 168, 24, 0.75);
+    }
+
+    100% {
+        text-shadow:
+            -.025em 0 0 rgba(138, 1, 1, 0.75),
+            -.025em -.025em 0 rgba(0, 255, 0, .75),
+            -.025em -.05em 0 rgba(251, 168, 24, 0.75);
+    }
+}
+
+// if user has animation disabled on their browser, this will honor that and make sure no animation runs
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}

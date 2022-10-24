@@ -1,11 +1,36 @@
-// hamburger nav 
-const toggleButton = document.getElementsByClassName("toggleButton")[0]
-const navLinks = document.getElementsByClassName("navLinks")[0]
-const burger = document.querySelector('.burger');
+const navSlide = () => {
+    const burger = document.getElementsByClassName("burger")[0]
+    const navLinks = document.getElementsByClassName("navLinks")[0]
     
-toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active')
-    burger.classList.toggle('toggleButton');
-})
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active')
+        burger.classList.toggle('toggle');
+    });
+        
+}
 
+navSlide();
+
+const enough = () => {
+    const button = document.getElementById('startStop');
+    const animate = document.getElementById('glitchBtn');
+    const animateBtm = document.getElementById('glitchBtn2');
+
+    button.addEventListener('click', () => {
+        animate.style = 'animation: none';
+        animateBtm.style = 'animation: none';
+    });
+}
+
+enough();
+
+
+const darkLight = () => {
+    const checkbox = document.getElementById('checkbox');
+    checkbox.addEventListener('change', () => {
+        document.body.classList.toggle('light');
+    });
+}
+
+darkLight();
 
