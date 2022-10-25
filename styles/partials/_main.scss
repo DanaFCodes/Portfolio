@@ -10,7 +10,7 @@
 
 .h1,
 .glitch {
-    margin-top: 10%;
+    margin-top: 20%;
     font-size: 4rem;
     font-weight: 400;
     letter-spacing: 5px;
@@ -71,7 +71,7 @@ h2.titles {
     padding-top: 8%;
     display: flex;
     justify-content: center;
-    margin-left: 18%;
+    margin-left: 14%;
     padding-bottom: 5%;
     color: $lightGreyFont1;
     
@@ -93,19 +93,23 @@ h2.titles {
     padding-top: 5%;
     
     i {
-    transform: scale(4);
+    transform: scale(2);
     margin-left: 15%;
     margin-right: 25%;
-    color: $lightGreyFont1;  
+    color: $darkGreyFont1;  
+    }
+
+    i:hover {
+        color: $lightGreyFont1;
     }
 }
 
 .about {
     padding-top: 10%;
 }
+
 // footer
 footer {
     text-align: center;
-    margin-top: 10%;
-
+    margin-top: 20%;
 }

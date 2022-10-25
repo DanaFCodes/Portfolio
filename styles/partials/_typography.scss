@@ -32,7 +32,8 @@ body.light {
 
     .logo {
             img {
-                opacity: .7;
+                opacity: .5;
+                filter: contrast(100%);
             }
         }
 
@@ -93,8 +94,17 @@ body.light {
         color: $darkGreyFont1;
     }
 
-    .skillsIcons,
-    .socialIcons i {
+    .skillsIcons {
         color: $darkGreyFont2;
     }
+
+    .socialIcons i {
+        color: $lightGreyFont2;
+    }
+
+    .socialIcons i:hover {
+        color: $darkGreyFont2;
+    }
+    
+
 }

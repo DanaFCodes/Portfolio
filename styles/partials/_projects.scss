@@ -29,11 +29,14 @@
         text-align: center;
         text-decoration: none;
     }
+
+    h3 {
+        color: $lightGreyFont1;
+    }
 }
 
 .coloumn {
      flex-direction: column;
-     margin-left: 10%;
      width: 100%;
  }
 

@@ -19,6 +19,12 @@ const enough = () => {
     button.addEventListener('click', () => {
         animate.style = 'animation: none';
         animateBtm.style = 'animation: none';
+
+        // ugh toggle button functionality and change innerHTML on toggle 
+    //     if (animate.style = 'animation: none' && animateBtm.style = 'animation: none';) {
+    //         button.innerHTML = 'bring the glitch back'
+    // } 
+        
     });
 }
 

@@ -27,7 +27,9 @@ body.light {
   color: rgb(115, 115, 115);
 }
 body.light .logo img {
-  opacity: 0.7;
+  opacity: 0.5;
+  -webkit-filter: contrast(100%);
+          filter: contrast(100%);
 }
 body.light h3 {
   color: rgb(15, 15, 15);
@@ -76,8 +78,13 @@ body.light .liveButt span:after {
 body.light .glitch {
   color: rgb(122, 122, 122);
 }
-body.light .skillsIcons,
+body.light .skillsIcons {
+  color: rgb(15, 15, 15);
+}
 body.light .socialIcons i {
+  color: rgb(115, 115, 115);
+}
+body.light .socialIcons i:hover {
   color: rgb(15, 15, 15);
 }
 
@@ -124,6 +131,8 @@ body.light .socialIcons i {
   max-width: 30%;
   margin: 2%;
   opacity: 1;
+  -webkit-filter: contrast(35%);
+          filter: contrast(35%);
 }
 
 .toggleButton {
@@ -414,7 +423,7 @@ html {
 
 .h1,
 .glitch {
-  margin-top: 10%;
+  margin-top: 20%;
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: 5px;
@@ -490,7 +499,7 @@ h2.titles {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 18%;
+  margin-left: 14%;
   padding-bottom: 5%;
   color: rgb(210, 210, 210);
 }
@@ -515,10 +524,13 @@ h2.titles {
   padding-top: 5%;
 }
 .socialIcons i {
-  -webkit-transform: scale(4);
-          transform: scale(4);
+  -webkit-transform: scale(2);
+          transform: scale(2);
   margin-left: 15%;
   margin-right: 25%;
+  color: rgb(122, 122, 122);
+}
+.socialIcons i:hover {
   color: rgb(210, 210, 210);
 }
 
@@ -528,9 +540,14 @@ h2.titles {
 
 footer {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
+@media (max-width: 1200px) {
+  .h1 {
+    margin-top: 30%;
+  }
+}
 @media (max-width: 900px) {
   .logo {
     width: 100%;
@@ -542,9 +559,15 @@ footer {
   body p {
     font-size: 0.8rem;
   }
+  .h1 {
+    margin-top: 45%;
+  }
   .h1,
 .glitch {
     font-size: 3rem;
+  }
+  .skills {
+    padding-top: 40%;
   }
   .skillsIcons i {
     -webkit-transform: scale(2);
@@ -555,7 +578,7 @@ footer {
             transform: scale(2);
   }
   .label {
-    bottom: 115px;
+    bottom: 110px;
   }
 }
 @media (max-width: 700px) {
@@ -569,7 +592,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 18%;
+    top: 9%;
     right: 13%;
     position: absolute;
   }
@@ -627,13 +650,29 @@ footer {
     padding-bottom: 5%;
     text-align: center;
   }
+  .skills {
+    padding-top: 50%;
+  }
+  .skillsIcons {
+    margin-left: 16%;
+  }
+  .label {
+    left: 95%;
+  }
 }
 @media (max-width: 590px) {
   .toggleButton {
-    top: 15%;
+    top: 8%;
   }
   .label {
-    bottom: 105px;
+    bottom: 100px;
+    left: 90%;
+  }
+  .skills {
+    padding-top: 70%;
+  }
+  .skillsIcons {
+    margin-left: 18%;
   }
   h2.titles {
     font-size: 1.5rem;
@@ -645,10 +684,15 @@ footer {
 .glitch {
     font-size: 2rem;
   }
+  .aboutText {
+    text-align: center;
+  }
 }
 @media (max-width: 550px) {
   .skillsIcons i {
-    margin-right: 10%;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin-right: 13%;
   }
   .label {
     bottom: 100px;
@@ -657,14 +701,30 @@ footer {
 }
 @media (max-width: 500px) {
   .toggleButton {
-    top: 12%;
+    top: 7%;
   }
   .label {
-    bottom: 100px;
+    bottom: 60px;
     left: 90%;
   }
+  #startStop {
+    display: none;
+  }
+  #glitchBtn,
+#glitchBtn2 {
+    opacity: 0;
+  }
+  .label {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    bottom: 48px;
+    left: 85%;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .h1 {
+    padding-top: 50%;
+  }
   .h1,
 .glitch {
     font-size: 1.5rem;
@@ -675,8 +735,16 @@ footer {
   .label {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    bottom: 85px;
+    bottom: 44px;
     left: 85%;
+  }
+}
+@media (max-width: 350px) {
+  .label {
+    bottom: 40px;
+  }
+  .toggleButton {
+    top: 4%;
   }
 }
 .btn {
@@ -705,6 +773,7 @@ footer {
   line-height: 42px;
   padding: 0;
   border: none;
+  margin-left: -1%;
 }
 
 .enoughBtn span {
@@ -804,6 +873,7 @@ footer {
   font-size: 0.8rem;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+  margin-left: -2%;
 }
 
 .gitButt {
@@ -1138,12 +1208,16 @@ footer {
   text-align: center;
   text-decoration: none;
 }
+.oneMag h3,
+.underSea h3,
+.makeWok h3 {
+  color: rgb(210, 210, 210);
+}
 
 .coloumn {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 10%;
   width: 100%;
 }
