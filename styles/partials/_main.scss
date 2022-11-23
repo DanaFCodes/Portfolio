@@ -1,115 +1,217 @@
 @use 'variables' as *;
 
-.h1 {
-    padding-top: 5%;
-}
-
 .glitch {
     margin-left: 1%;
 }
 
 .h1,
 .glitch {
-    margin-top: 20%;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 400;
     letter-spacing: 5px;
-}
-
-.fas {
-    transform: scale(1.1);
-    color: $lightGreyFont1;
-    rotate: 280deg;
-    margin: 0 13%;
-}
-
-.label {
-    height: 35px;
-    width: 70px;
-    border-radius: 50px;
-    background-color: $lightGreyFont2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    left: 100%;
-    bottom: 130px;
-    rotate: 90deg;
-}
-
-.checkbox {
-    opacity: 0;
-    position: absolute;
-}
-
-.ball {
-    background-color: $lightGreyFont1;
-    position: absolute;
-    top: 3.5px;
-    left: 7px;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
-}
-
-.checkbox:checked+.label .ball {
-    transform: translateX(31px);
+    margin-top: 15%;
 }
 
 h2.titles {
-    margin-top: 10%;
+    margin: 0% 0 5% 0;
+    padding-top: 20%;
     text-align: left;
     font-size: 2rem;
+    color: $lightGreyFont1;
+    width: 100%;
 }
 
-.skills {
-    padding-top: 15%;
-}
-
-.skillsIcons {
-    padding-top: 8%;
+.skillsIcons ul {
     display: flex;
     justify-content: center;
-    margin-left: 14%;
-    padding-bottom: 5%;
-    color: $lightGreyFont1;
-    
-    i {
-        margin-right: 15%;
-        transform: scale(4);
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: 2%;
+
+    li {
+        margin: 7% 9% 6% 0;
+        color: $darkGreyFont1;
+        text-align: center;
+        i {
+            padding-bottom: 15%;
+            transform: scale(4);
+        }
+
+        .fa-square-js {
+            margin-top: 9%;
+        }
+        
+        p.square-js {
+            margin-top: 11%;
+        }
+            
+        .fa-github {
+            margin-bottom: -2%;
+        }
+
+        .fa-universal-access {
+            margin: 14% 0% 0% 19%;
+        }
+
+        p.universal-access {
+            margin: 4% 0 0% 14%;
+        }
+
+        .iconify {
+            transform: scale(4);
+            margin: -12% 0 20% 100%;
+        }
+
+        .fa-figma {
+            margin-right: 75%;
+        }
+
+        p.figma {
+            margin: 47% 0% 0% -72%;
+        }
+
+        .fa-trello {
+            margin-right: 16%;
+        }
+
+        p.trello {
+            margin: 60% 0% 0% -14%
+        }
+
+        p.firebase {
+            margin-left: 62%;
+        }
+
+        .fa-mobile-screen-button {
+            margin-top: 13%;
+        }
+
+        p.responsive {
+            margin-top: 9%;
+        }
+
+        .fa-gears {
+            margin: 11% 0% 5% -105%;
+        }
+
+        .gears {
+            margin: 16% 0% 0% -90%;
+        }
+    }
+
+}
+
+
+// about section
+#about {
+    display: flex;
+    flex-wrap: wrap;
+
+    h2 {
+        padding-bottom: 3%;
+        // margin-top: 
     }
 }
 
-// about section
+.aboutImgDark {
+    width: 40%;
+    height: 40%;
+    img {
+        border-radius: 5%;
+        width: 100%;
+    }
+}
+
+.aboutImgLight {
+    display: none;
+}
+
 .aboutText {
-    text-align: left;
-    padding-top: 6%;
+    text-align: right;
+    width: 60%;
+    float: right;
+    padding: 5% 0% 0% 5%;
 }
 
 .socialIcons {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 5%;
+    padding-top: 6%;
     
     i {
-    transform: scale(2);
+    transform: scale(3);
     margin-left: 15%;
     margin-right: 25%;
     color: $darkGreyFont1;  
     }
 
     i:hover {
-        color: $lightGreyFont1;
+        color: $brightGreen;
     }
 }
 
-.about {
-    padding-top: 10%;
-}
 
 // footer
 footer {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
 }
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: $lightBackground;
+    color: rgb(89, 50, 116);
+    cursor: pointer;
+    outline: none;
+    border: 3px solid black;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    border-radius: 20%;
+}
+
+#backToTopBtn:hover {
+    background-color: $brightGreen;
+    color: $lightBackground;
+}
+
+/* Animations */
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+/* zoomIn */
+@keyframes btnEntrance { 
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }    
+} 
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+/* zoomOut */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+} 

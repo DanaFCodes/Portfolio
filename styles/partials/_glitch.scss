@@ -6,9 +6,9 @@
     text-transform: uppercase;
     margin-top: -5%;
     text-shadow:
-        .05em 0 0 rgba(138, 1, 1, 0.75),
+        .05em 0 0 rgba(179, 43, 79, 0.626),
         -.025em -.05em 0 rgba(0, 255, 0, .75),
-        .025em 0 .05em rgba(251, 168, 24, 0.75);
+        .025em 0 .05em rgb(49, 0, 184);
     margin-bottom: 2%;
 }
 
@@ -18,7 +18,7 @@
     left: 0;
 }
 
-.glitch .span1 {
+.span1.active {
     // this is the animation we want to turn off
     animation: glitch 500ms infinite; 
     clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
@@ -26,11 +26,19 @@
     opacity: .5;
 }
 
-.glitch .span2 {
+.span2.active {
     animation: glitch 300ms infinite;
     clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
     transform: translate(.05em, -0.025em);
     opacity: .5;
+}
+
+.span1 {
+    animation: none;
+}
+
+.span2 {
+    animation: none;
 }
 
 @keyframes glitch {
@@ -44,34 +52,34 @@
     14% {
         text-shadow:
             .05em 0 0 rgba(138, 1, 1, 0.75),
-            -.025em -.05em 0 rgba(0, 255, 0, .75),
+            -.025em -.05em 0 rgba(76, 0, 255, 0.75),
             .025em 0 .05em rgba(251, 168, 24, 0.75);
     }
 
     15% {
         text-shadow:
-            .05em 0 0 rgba(138, 1, 1, 0.75),
+            .05em 0 0 rgba(76, 0, 255, 0.75),
             -.025em -.05em 0 rgba(0, 255, 0, .75),
-            .025em 0 .05em rgba(251, 168, 24, 0.75);
+            .025em 0 .05em rgba(76, 0, 255, 0.75);
     }
 
     49% {
         text-shadow:
-            .05em 0 0 rgba(138, 1, 1, 0.75),
+            .05em 0 0 rgba(76, 0, 255, 0.75),
             -.025em -.05em 0 rgba(0, 255, 0, .75),
-            .025em 0 .05em rgba(251, 168, 24, 0.75);
+            .025em 0 .05em rgba(76, 0, 255, 0.75);
     }
 
     50% {
         text-shadow:
-            .05em 0 0 rgba(138, 1, 1, 0.75),
+            .05em 0 0 rgba(76, 0, 255, 0.75),
             -.025em -.05em 0 rgba(0, 255, 0, .75),
             .025em 0 .05em rgba(251, 168, 24, 0.75);
     }
 
     99% {
         text-shadow:
-            .025em .05em 0 rgba(138, 1, 1, 0.75),
+            .025em .05em 0 rgba(76, 0, 255, 0.75),
             .05em 0 0 rgba(0, 255, 0, .75),
             0 -.05em 0 rgba(251, 168, 24, 0.75);
     }

@@ -17,6 +17,7 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="icon" href="./assets/logo.png">
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
     <title>Dana Filatov</title>
 </head>
 
@@ -26,10 +27,6 @@
             <a href="./index.html"><span class="logo">
                     <img src="./assets/logo.png" alt="Dana Filatov's signature">
                 </span></a>
-
-            <!-- <a href="./index.html"><span class="lightLogo">
-                <img src="./assets/lightLogo.png" alt="Dana Filatov's signature">
-            </span></a> -->
 
             <a href="#" class="toggleButton">
                 <div class="burger">
@@ -52,6 +49,16 @@
                     </li>
                 </ul>
             </div>
+
+            <span>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+            </span>
+
         </nav>
     </header>
 
@@ -59,32 +66,68 @@
         <div class="lilMain wrapper">
         <h1 class="h1">Dana Filatov,</h1>
         <h2 class="glitch">Web Developer
-            <span id="glitchBtn" class=span1 aria-hidden="true">Web Developer</span>
-            <span id="glitchBtn2" class=span2 aria-hidden="true">Web Developer</span>
+            <span id="glitchBtn" class='span1 active' aria-hidden="true">Web Developer</span>
+            <span id="glitchBtn2" class='span2 active' aria-hidden="true">Web Developer</span>
         </h2>
 
-        <button class="btn enoughBtn" id="startStop"><span>that's enough!</span></button>
-
-        <div class="wrapper">
-            <input type="checkbox" class="checkbox" id="checkbox">
-            <label for="checkbox" class="label">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-                <div class="ball"></div>
-            </label>
-        </div>
+        <button class="btn enoughBtn" id="startStop" onClick="changeText()">
+            <span id="buttonTxt">that's enough!</span>
+        </button>
 
         <section id="skills">
             <h2 class="titles skills">skills</h2>
             
             <div class="skillsIcons">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-sass"></i>
-                <i class="fa-brands fa-square-js"></i>
-                <i class="fa-brands fa-react"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="devicon-firebase-plain"></i>
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-sass"></i>
+                        <p>SASS</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-square-js"></i>
+                        <p class="square-js">JavaScript</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-github"></i>
+                        <p>GitHub</p>
+                    </li>
+                    <li>
+                        <i class="iconify" data-icon="simple-icons:firebase"></i>
+                        <p class="firebase">Firebase</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-universal-access"></i>
+                        <p class="universal-access">Accessibility</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-figma"></i>
+                        <p class="figma">Figma</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-trello"></i>
+                        <p class="trello">Trello</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p class="responsive">Responsive</p>
+                    </li>
+                    <li>
+                        <i class="fa-sharp fa-solid fa-gears"></i>
+                        <p class="gears">REST API</p>
+                    </li>
+                </ul> 
             </div>
         </section>
 
@@ -93,25 +136,25 @@
 
             <div class="oneMag" data-aos="fade-right">
                 <div class="coloumn">
-                    <h3>One Magazine</h3>
-                    <p>Using HTML and CSS3, this is a responsive website for One Magazine. My first stab at a functional, accesible website!</p>
-                    <a class="gitLink gitButt"href="https://github.com/DanaFCodes/Assignment-1/blob/main/index.html" target="_blank"><span>GitHub</span></a>
-                    <a class="liveLink liveButt" href="https://onemagazine.netlify.app/" target="_blank"><span>Live</span></a>
+                    <h3>Refrigeration Versification</h3>
+                    <p>This web app was created by myself and three other developers, primarily using React, SASS, REST Api(s), and GitHub to collaborate. A functional, responsive, and accessible magnetic-poetry web app!</p>
+                    <a class="gitLink gitButt"href="https://github.com/inspiredGames/refrigerationVersification" target="_blank"><span>GitHub</span></a>
+                    <a class="liveLink liveButt" href="https://refrigeration-versification-game.netlify.app/" target="_blank"><span>Live</span></a>
                 </div>
         
-                <img src="./assets/morflax-things-removebg-preview.png" alt="mockup of project1 on a laptop screen">
+                <img src="./assets/My project(1).png" alt="mockup of project1 on a laptop screen and phone screen">
             </div>
 
             <div class="underSea" data-aos="fade-right">
                 <div class="coloumn">
                     <h3>Under the Sea</h3>
-                    <p>Here I get a lil' fancier, using HTML, CSS3, SASS, and GitHub, to create a responsive site for the new aquarium in town🐠
+                    <p>Using HTML, CSS, and SASS to build a responsive, accesssible multipage website from a client PSD. 
                     </p>
                     <a class="gitLink gitButt" href="https://github.com/DanaFCodes/Project1" target="_blank"><span>GitHub</span></a>
                     <a class="liveLink liveButt" href="https://dana-feldman-project1.netlify.app/"target="_blank"><span>Live</span></a>
                 </div>
                 
-                    <img src="./assets/morflax-things_1_-removebg-preview.png" alt="mockup of project3 on a laptop screen">
+                    <img src="./assets/My project(2).png" alt="mockup of PSD conversion on a laptop and phone screen">
             </div>
 
             <div class="makeWok" data-aos="fade-right">
@@ -123,12 +166,18 @@
                     <a class="liveLink liveButt" href="https://makeitwok.netlify.app/" target="_blank"><span>Live</span></a>
                 </div>
 
-                    <img src="./assets/morflax-things_2_-removebg-preview.png" alt="mockup of project2 on a laptop screen">
+                    <img src="./assets/My project(3).png" alt="mockup of project2 on a laptop screen">
             </div>
         </section>
 
         <section id="about">
             <h2 class="about titles">about</h2>
+            <div class="aboutImgDark">
+            <img src="./assets/Dana-Feldman.jpg" alt="photo of Dana Filatov!">
+            </div>
+            <div class="aboutImgLight">
+                <img src="./assets/Dana_JPG.jpg" alt="photo of Dana Filatov holding fruit">
+            </div>
                 <div class="aboutText">
                     <p>My name is Dana (she/her), and I'm an artist turned Frontend Web Developer navigating my way from an ocean of paint and clay to a sea of zeros and ones!
             
@@ -142,10 +191,12 @@
 
             <div class="socialIcons wrapper">
                 <a href="https://github.com/DanaFCodes"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/dana-feldman-605320196/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/dana-filatov/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="mailto:danafeldman97@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </section>
+
+        <button id="backToTopBtn"><i class="fas fa-angle-double-up"></i></button>
 
         <footer>
             <p>created with 💗 by Dana Filatov</p>

@@ -6,7 +6,7 @@ body {
     transition: background 1s ease;
     color: $darkGreyFont1;
     .navLinks li a:hover {
-            color: $lightGreyFont1;
+            color: $brightGreen;
         }
     
     h1 {
@@ -28,7 +28,7 @@ body {
 body.light {
     background-color: $lightBackground;
     transition: background 1s ease;
-    color: $lightGreyFont2;
+    color: $darkGreyFont2;
 
     .logo {
             img {
@@ -53,15 +53,20 @@ body.light {
         background-color: $lightGreyFont2;
     }
 
+    .fas {
+        color: $darkGreyFont1;
+    }
+
+    .label {
+        background-color: $darkGreyFont2;
+    }
+
     .btn, 
     .gitLink,
     .liveLink {
         color: $darkGreyFont2;
     }
 
-    .ball {
-        color: $lightGreyFont1;
-    }
 
     .enoughBtn:before,
     .enoughBtn:after,
@@ -70,13 +75,13 @@ body.light {
     .liveButt:before,
     .liveButt:after {
         border: none;
-        background: rgb(34, 105, 12);
+        background: rgb(89, 50, 116);
     }
 
     .enoughBtn span:hover,
     .gitButt span:hover,
     .liveButt span:hover {
-        color: rgb(34, 105, 12);
+        color: rgb(89, 50, 116);
         border: none;
     }
 
@@ -87,14 +92,14 @@ body.light {
     .gitButt span:after,
     .liveButt span:after {
         border: none;
-        background: rgb(34, 105, 12);
+        background: rgb(89, 50, 116);
     }
 
     .glitch {
-        color: $darkGreyFont1;
+        color: $lightGreyFont2;
     }
 
-    .skillsIcons {
+    .skillsIcons ul li {
         color: $darkGreyFont2;
     }
 
@@ -103,8 +108,38 @@ body.light {
     }
 
     .socialIcons i:hover {
-        color: $darkGreyFont2;
+        color: rgb(89, 50, 116);
     }
     
+    .aboutImgDark {
+        display: none;
+    }
+
+    .aboutImgLight {
+        display: revert;
+        width: 40%;
+        height: 40%;
+        img {
+                border-radius: 5%;
+                width: 100%;
+            }
+    }
+
+        #backToTopBtn {
+            background-color: $lightGreyFont2;
+            color: rgb(89, 50, 116);
+            cursor: pointer;
+            outline: none;
+            border: 3px solid black;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            transition-property: background-color, color;
+            border-radius: 20%;
+        }
+    
+        #backToTopBtn:hover {
+            background-color: rgb(89, 50, 116);
+            color: $lightBackground;
+        }
 
 }

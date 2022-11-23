@@ -5,26 +5,28 @@ const navSlide = () => {
     burger.addEventListener('click', () => {
         navLinks.classList.toggle('active')
         burger.classList.toggle('toggle');
-    });
-        
+    });        
 }
-
 navSlide();
+
+// JUST NEED TO CHANGE INNERHTML!❄️❄️
 
 const enough = () => {
     const button = document.getElementById('startStop');
-    const animate = document.getElementById('glitchBtn');
-    const animateBtm = document.getElementById('glitchBtn2');
+    const curText = document.getElementById('buttonTxt')[0];
+    const span1 = document.getElementsByClassName("span1")[0]
+    const span2 = document.getElementsByClassName("span2")[0]
 
     button.addEventListener('click', () => {
-        animate.style = 'animation: none';
-        animateBtm.style = 'animation: none';
+        span1.classList.toggle('active');
+        span2.classList.toggle('active');
 
-        // ugh toggle button functionality and change innerHTML on toggle 
-    //     if (animate.style = 'animation: none' && animateBtm.style = 'animation: none';) {
-    //         button.innerHTML = 'bring the glitch back'
-    // } 
-        
+        // if (span1.classList.toggle === 'active') {
+        //     curText.innerHTML = 'glitch me';
+        // } else {
+        //     curText.innerHTML = `that's enough`
+        // };
+
     });
 }
 
@@ -40,3 +42,30 @@ const darkLight = () => {
 
 darkLight();
 
+// back to top functionality
+const backToTopButton = document.querySelector('#backToTopBtn');
+
+window.addEventListener('scroll', scrollFunction);
+
+function scrollFunction() {
+    if (window.pageYOffset > 200) {
+        if (!backToTopButton.classList.contains('btnEntrance')) {
+            backToTopButton.classList.remove('btnExit');
+            backToTopButton.classList.add('btnEntrance');
+            backToTopButton.style.display = 'block';
+        }
+    } else {
+        if (backToTopButton.classList.contains('btnEntrance')) {
+            backToTopButton.classList.remove('btnEntrance');
+            backToTopButton.classList.add('btnExit');
+            setTimeout(function () {
+                backToTopButton.style.display = 'none';
+            }, 250)
+        }
+    }
+}
+
+backToTopButton.addEventListener('click', backToTop);
+function backToTop() {
+    window.scrollTo(0, 0);
+}
