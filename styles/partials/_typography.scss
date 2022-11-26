@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
 body {
     overflow-x: hidden;
@@ -67,7 +68,6 @@ body.light {
         color: $darkGreyFont2;
     }
 
-
     .enoughBtn:before,
     .enoughBtn:after,
     .gitButt:before,
@@ -123,6 +123,10 @@ body.light {
                 border-radius: 5%;
                 width: 100%;
             }
+        @include tablet {
+            transform: scale(1.6);
+            margin: 20% 35%;
+        }
     }
 
         #backToTopBtn {
