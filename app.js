@@ -9,7 +9,6 @@ const navSlide = () => {
 }
 navSlide();
 
-// JUST NEED TO CHANGE INNERHTML!❄️❄️
 
 const enough = () => {
     const button = document.getElementById('startStop');
@@ -20,14 +19,15 @@ const enough = () => {
     button.addEventListener('click', () => {
         span1.classList.toggle('active');
         span2.classList.toggle('active');
-
-        // if (span1.classList.toggle === 'active') {
-        //     curText.innerHTML = 'glitch me';
-        // } else {
-        //     curText.innerHTML = `that's enough`
-        // };
-
-    });
+        const btnText = document.querySelector('#buttonTxt');
+        const curPhrase = btnText.textContent;
+      
+        if (curPhrase === `that's enough!`) {
+            btnText.textContent = 'glitch me!';
+        } else {
+            btnText.textContent = `that's enough!`
+        }
+    });   
 }
 
 enough();

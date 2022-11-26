@@ -1,15 +1,22 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
 .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+            flex-direction: column;
+    }
     
     .fas {
         transform: scale(1.2);
         color: $darkGreyFont1;
         rotate: 10deg;
         margin: 0 12%;
+        @include tablet {
+            opacity: 0;
+        }
     }
     
     .label {
@@ -21,11 +28,17 @@
         align-items: center;
         position: relative;
         right: 50px;
+        @include tablet {
+            opacity: 0;
+        }
     }
 
     .checkbox {
         opacity: 0;
         position: absolute;
+        @include tablet {
+            opacity: 0;
+        }
     }
 
     .ball {
@@ -37,6 +50,9 @@
         width: 30px;
         border-radius: 50%;
         transition: transform 0.2s linear;
+        @include tablet {
+            opacity: 0;
+        }
     }
 
     .checkbox:checked+.label .ball {
@@ -44,17 +60,42 @@
     }
 }
 
+@include tablet {
+    .navLinks {
+        transform: translateY(-260%);
+        transition: transform 0.5s ease-in-out;
+    }  
+    
+    .navLinks.active {
+        display: flex;
+        width: 80vw;
+        transform: translateY(0%);
+        margin-left: auto;
+    }
+}
+
 .navLinks ul {
     margin-left: -15%;
     padding: 0;
     display: flex;
+    @include tablet {
+        flex-direction: column;
+        width: 100vw;
+        background-color: #49734965;
+    }
 }
 
 .navLinks li {
     list-style-type: none;
     margin-top: 1%;
     background-color:transparent;
+    @include tablet {
+        text-align: center;
+        width: 100%;
+        margin: -2%;
+    }
 }
+
 
 .navLinks li a {
     text-decoration: none;
@@ -85,6 +126,12 @@
     width: 30px;
     height: 26px;
     position: absolute;
+    @include tablet {
+        display: flex;
+        top: 5%;
+        right: 13%;
+        position: absolute;
+    }
 }
 
 .burger div {

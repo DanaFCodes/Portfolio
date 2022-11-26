@@ -1,15 +1,30 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
-.oneMag,
+.refVer,
 .underSea,
 .makeWok {
     color: $lightGreyFont1;
     display: flex;
     padding: 3% 0%;
-    
+    @include tablet {
+        h3 {
+            font-size: 1rem;
+            text-align: center;
+        }
+        img {
+            display: none;
+        }
+    }
+
     p {
         text-align: left;
         max-width: 70%;
+        @include tablet {
+            font-size: 1rem;
+            max-width: 100%;
+            text-align: center;
+        }
     }
 
     img {
@@ -33,5 +48,8 @@
 .coloumn {
      flex-direction: column;
      width: 100%;
+     @include tablet {
+        flex-direction: row;
+     }
  }
 

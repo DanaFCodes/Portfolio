@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
 // <--------- ENOUGH BUTTON STARTS --------> //
 .btn {
@@ -18,6 +19,12 @@
     text-transform: uppercase;
     font-size: .8rem;
     transform: scale(.8);
+
+    @include tablet {
+        font-size: .6rem;
+        transform: scale(.5);
+    }
+
 }
 
 .enoughBtn {
@@ -27,6 +34,10 @@
     padding: 0;
     border: none;
     margin-left: -1%;
+
+    @include tablet {
+        margin-left: -6%;
+    }
 }
 
 .enoughBtn span {
@@ -129,6 +140,11 @@
     font-size: .8rem;
     transform: scale(.8);
     margin-left: -2%;
+
+    @include tablet {
+        font-size: .6rem;
+        transform: scale(.5);
+    }
 }
 
 .gitButt {
@@ -137,6 +153,10 @@
     line-height: 42px;
     padding: 0;
     border: none;
+    @include tablet {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .gitButt span {
@@ -238,6 +258,11 @@
     text-transform: uppercase;
     font-size: .8rem;
     transform: scale(.8);
+    @include tablet {
+        font-size: .6rem;
+        transform: scale(.5);
+        
+    }
 }
 
 .liveButt {
@@ -246,6 +271,10 @@
     line-height: 42px;
     padding: 0;
     border: none;
+    @include tablet {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .liveButt span {
