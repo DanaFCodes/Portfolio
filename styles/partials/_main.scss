@@ -17,7 +17,7 @@
 
     @include mobile {
         font-size: 2rem;
-        margin-top: 5%;
+        // margin-top: 5%;
     }
 }
 
@@ -40,7 +40,7 @@ h2.titles {
 
 .skillsIcons ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
     flex-wrap: wrap;
     margin-left: 2%;

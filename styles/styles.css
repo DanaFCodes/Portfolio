@@ -26,11 +26,6 @@ body.light {
   transition: background 1s ease;
   color: rgb(15, 15, 15);
 }
-body.light .logo img {
-  opacity: 0.5;
-  -webkit-filter: contrast(100%);
-          filter: contrast(100%);
-}
 body.light h3 {
   color: rgb(15, 15, 15);
 }
@@ -277,8 +272,7 @@ body.light #backToTopBtn:hover {
   max-width: 30%;
   margin: 2%;
   opacity: 1;
-  -webkit-filter: contrast(20%);
-          filter: contrast(20%);
+  padding-top: 5%;
 }
 
 .toggleButton {
@@ -591,7 +585,6 @@ html {
   .h1,
 .glitch {
     font-size: 2rem;
-    margin-top: 5%;
   }
 }
 
@@ -619,9 +612,9 @@ h2.titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
