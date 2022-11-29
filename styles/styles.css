@@ -585,6 +585,7 @@ html {
   .h1,
 .glitch {
     font-size: 2rem;
+    margin-top: -10%;
   }
 }
 
