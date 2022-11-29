@@ -730,14 +730,15 @@ h2.titles {
 
 .aboutText {
   text-align: right;
-  width: 60%;
+  width: 55%;
   float: right;
-  padding: 0% 0% 0% 5%;
+  margin: -35% 0% 0% 0%;
 }
 @media (max-width: 750px) {
   .aboutText {
     text-align: center;
     width: 100%;
+    margin: 8% 0% 0% 0%;
   }
   .aboutText p {
     font-size: 1rem;
