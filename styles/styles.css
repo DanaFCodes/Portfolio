@@ -585,7 +585,7 @@ html {
   .h1,
 .glitch {
     font-size: 2rem;
-    margin-top: -10%;
+    margin-top: -8%;
   }
 }
 
@@ -620,6 +620,7 @@ h2.titles {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 2%;
+  width: 100%;
 }
 .skillsIcons ul li {
   margin: 7% 9% 6% 0;
@@ -635,6 +636,18 @@ h2.titles {
   .skillsIcons ul li i {
     -webkit-transform: scale(2);
             transform: scale(2);
+    margin-left: -1%;
+  }
+}
+@media (max-width: 480px) {
+  .skillsIcons ul li i {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@media (max-width: 480px) {
+  .skillsIcons ul li p {
+    font-size: 0.6rem;
   }
 }
 .skillsIcons ul li .fa-square-js {
@@ -654,6 +667,12 @@ h2.titles {
             transform: scale(2);
   }
 }
+@media (max-width: 480px) {
+  .skillsIcons ul li .iconify {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
 .skillsIcons ul li p.figma {
   margin: 50% 0% 0% 0%;
 }
@@ -665,13 +684,13 @@ h2.titles {
 .skillsIcons ul li p.trello {
   margin: 60% 0% 0% -14%;
 }
-@media (max-width: 480px) {
-  .skillsIcons ul li p.trello {
-    margin: 52% 0% 0% 0%;
-  }
-}
 .skillsIcons ul li p.firebase {
   margin: 41% 0% 0% -5%;
+}
+@media (max-width: 480px) {
+  .skillsIcons ul li p.firebase {
+    margin: 35% 0% 0% -5%;
+  }
 }
 
 #about {

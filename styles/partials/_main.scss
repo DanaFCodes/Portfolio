@@ -17,7 +17,7 @@
 
     @include mobile {
         font-size: 2rem;
-        margin-top: -10%;
+        margin-top: -8%;
     }
 }
 
@@ -44,7 +44,7 @@ h2.titles {
     list-style: none;
     flex-wrap: wrap;
     margin-left: 2%;
-
+    width: 100%;
     li {
         margin: 7% 9% 6% 0;
         color: $darkGreyFont1;
@@ -56,9 +56,19 @@ h2.titles {
 
             @include tablet {
                     transform: scale(2);
-                }
-        
+                    margin-left: -1%;
+            }
+            @include mobile {
+                transform: scale(1.5);
+            }
        }
+
+       p {
+            @include mobile {
+                font-size: .6rem;
+            }
+       }
+
         .fa-square-js {
                 margin: 3% 0% 0% 0%;
         }
@@ -73,6 +83,10 @@ h2.titles {
             @include tablet {
                 transform: scale(2);
             }
+            @include mobile {
+                transform: scale(1.5);
+            }
+
         }
 
         p.figma {
@@ -84,13 +98,13 @@ h2.titles {
 
         p.trello {
             margin: 60% 0% 0% -14%;
-            @include mobile {
-                margin: 52% 0% 0% 0%;
-            }
         }
 
         p.firebase {
             margin: 41% 0% 0% -5%;
+            @include mobile {
+                    margin: 35% 0% 0% -5%;
+                }
         }
      }
 }
