@@ -30,7 +30,6 @@ h2.titles {
     width: 100%;
     @include mobile {
         font-size: 1.5rem;
-        // padding-top: 35%;
     }
 
     @include tablet {
@@ -43,8 +42,8 @@ h2.titles {
     justify-content: space-evenly;
     list-style: none;
     flex-wrap: wrap;
-    margin-left: 2%;
     width: 100%;
+
     li {
         margin: 7% 9% 6% 0;
         color: $darkGreyFont1;

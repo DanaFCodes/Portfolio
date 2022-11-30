@@ -31,13 +31,6 @@ body.light {
     transition: background 1s ease;
     color: $darkGreyFont2;
 
-    .logo {
-            img {
-                // opacity: .5;
-                // filter: contrast(100%);
-            }
-        }
-
     h3 {
         color: $darkGreyFont2;
     }
@@ -129,21 +122,21 @@ body.light {
         }
     }
 
-        #backToTopBtn {
-            background-color: $lightGreyFont2;
-            color: rgb(89, 50, 116);
-            cursor: pointer;
-            outline: none;
-            border: 3px solid black;
-            transition-duration: 0.2s;
-            transition-timing-function: ease-in-out;
-            transition-property: background-color, color;
-            border-radius: 20%;
-        }
-    
-        #backToTopBtn:hover {
-            background-color: rgb(89, 50, 116);
-            color: $lightBackground;
-        }
+    #backToTopBtn {
+        background-color: $lightGreyFont2;
+        color: rgb(89, 50, 116);
+        cursor: pointer;
+        outline: none;
+        border: 3px solid black;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        transition-property: background-color, color;
+        border-radius: 20%;
+    }
+
+    #backToTopBtn:hover {
+        background-color: rgb(89, 50, 116);
+        color: $lightBackground;
+    }
 
 }

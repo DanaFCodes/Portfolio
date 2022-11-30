@@ -618,7 +618,6 @@ h2.titles {
   list-style: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 2%;
   width: 100%;
 }
 .skillsIcons ul li {
